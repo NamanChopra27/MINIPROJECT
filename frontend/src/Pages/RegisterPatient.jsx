@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/* import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../Images/logo.jpeg';
 import axios from 'axios';
@@ -169,3 +169,4 @@ const RegisterPatient = () => {
   }
   
 export default RegisterPatient;
+*/

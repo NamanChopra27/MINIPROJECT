@@ -202,8 +202,8 @@ const MedicalRecordForm = () => {
     <FormContainer>
       <form className='flex flex-col justify-center'>
         <FormGroup>
-          <Label className='text-lg'>Doctor</Label>
-          <p className='text-3xl'>Dr.{authUser.fullName}</p>
+          <Label className='text-lg'>Proffesor</Label>
+          <p className='text-3xl'>Prof.{authUser.fullName}</p>
         </FormGroup>
         <div className='bg-green-normal rounded-md flex flex-col justify-center items-center'>
         {audio ? (
@@ -219,7 +219,7 @@ const MedicalRecordForm = () => {
         </Table>
         <SaveButton onClick={handleSave} className='self-center'>Save</SaveButton>
         <div className="report-container">
-            <h1 className='text-3xl'>Patient Summaries</h1>
+            <h1 className='text-3xl'>Lecture Summaries</h1>
             {summary.length > 0 ? (
                 <div className="summ-list">
                     {summary.map((summ, index) => (

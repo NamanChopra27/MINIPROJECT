@@ -70,7 +70,7 @@ function LoginPage() {
       });
       localStorage('token',data.token);
       setAuthUser(data.data);
-      navigate('/home');
+      navigate('/record');
     } catch (error) {
       setSignupError(error.response.data);
       setTimeout(() => {
@@ -88,7 +88,7 @@ function LoginPage() {
       });
       localStorage.setItem('token',data.token);
       setAuthUser(data.data);
-      navigate('/home');
+      navigate('/record');
     } catch (error) {
       setLoginError(error.response.data);
       setTimeout(() => {
@@ -223,10 +223,10 @@ function LoginPage() {
       <div className="panels-container">
         <div className="panel left-panel">
           <div className="content">
-            <h3 className='loginh3'>Welcome back, Doctor!</h3>
+            <h3 className='loginh3'>Welcome back, Learner !</h3>
             <p className='loginp'>
-              <p className="large">Log in to our platform to streamline your workflow</p>
-            <p className="small">Access medical resources, and stay connected with your patients.</p>
+              <p className="large">Log in to our platform to streamline your Study</p>
+            <p className="large"> Get Summary To Your Lecture Anytime Anywhere In A JIFFY !</p>
             </p>
             <button className="btn transparent" onClick={handleSignUpClick}>
                SIGN UP
@@ -236,11 +236,11 @@ function LoginPage() {
         </div>
         <div className="panel right-panel">
           <div className="content">
-            <h3 className='loginh3'>Dare to diagnose differently?</h3>
+            <h3 className='loginh3'>Dare to learn differently?</h3>
             <p className='loginp'>
-            <p className="large"> Sign up as a doctor today and embark on a journey</p>
+            <p className="large"> Sign up as a Learner today and embark on a journey</p>
            
-           <p className="small">Together, let's shape the future of healthcare</p>
+           <p className="large">Together, let's shape the future of Education</p>
             </p>
             <button onClick={handleSignInClick} className="btn transparent" id="sign-in-btn">
               LOGIN

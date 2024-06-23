@@ -41,7 +41,7 @@ const Report = () => {
     <div className="report-container bg-white p-4 rounded-md shadow-md">
         {report ? (
         <div className="report-content text-black">
-            <h2 className="text-3xl text-black font-bold mb-4">Medical Report</h2>
+            <h2 className="text-3xl text-black font-bold mb-4">Class Recap</h2>
             <h3>Name: {patientDetails && patientDetails.fullName}</h3>
             <h3>Ph-Number: {patientDetails && patientDetails.number}</h3>
             <h3>Age: {patientDetails && patientDetails.age}</h3>
@@ -58,8 +58,8 @@ const Report = () => {
                 <td className="py-2 px-4 border-b">{report.summary}</td>
                 </tr>
                 <tr>
-                <td className="py-2 px-4 border-b text-black text-lg">Prescription</td>
-                <td className="py-2 px-4 border-b">{report.summary2}</td>
+                {/* <td className="py-2 px-4 border-b text-black text-lg">Prescription</td> */}
+                {/* <td className="py-2 px-4 border-b">{report.summary2}</td> */}
                 </tr>
                 <tr>
                 <td className="py-2 px-4 border-b text-black text-lg">Hindi Translation</td>
